@@ -70,7 +70,7 @@ function update ()
 
 
 function destroyBall(pointer, gameObject) {
-  if (ball.alpha<0.5) {
+  if (ball.alpha>0.5) {
     ball.alpha=0.1;
   } else {
       ball.alpha=1;
