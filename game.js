@@ -67,6 +67,6 @@ var config = {
 
 
   function destroyShip(pointer, gameObject) {
-    gameObject.setTexture("explosion");
-    gameObject.play("explode");
+    gameObject.setVelocityY(10);
+    //gameObject.play("explode");
   }
