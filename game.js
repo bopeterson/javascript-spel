@@ -39,7 +39,7 @@ var config = {
       cursors = this.input.keyboard.createCursorKeys(); //8
 
       //14
-      for (var number=0;number<1;number=number+1) { //number++
+      for (var number=0;number<10;number=number+1) { //number++
         this.add.image(40+number*80,300,'star');
       }
       
@@ -70,6 +70,6 @@ var config = {
 
 
   function destroyShip(pointer, gameObject) {
-    gameObject.setVelocityX(100);
+    ball.setVelocityX(100);
     //gameObject.play("explode");
   }
