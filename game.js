@@ -39,7 +39,7 @@ var config = {
       cursors = this.input.keyboard.createCursorKeys(); //8
 
       //14
-      for (var number=0;number<9;number=number+1) { //number++
+      for (var number=0;number<8;number=number+1) { //number++
         this.add.image(40+number*80,300,'star');
       }
 
