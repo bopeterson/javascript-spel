@@ -64,3 +64,9 @@ var config = {
           ball.setVelocityX(0);
       }
     }
+
+
+  function destroyShip(pointer, gameObject) {
+    gameObject.setTexture("explosion");
+    gameObject.play("explode");
+  }
