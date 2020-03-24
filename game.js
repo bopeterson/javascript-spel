@@ -43,8 +43,8 @@ var config = {
         this.add.image(40+number*80,300,'star');
       }
       
-      ball.setInteractive().on('pointerdown', destroyShip);
-      //ball.input.on('gameobjectdown', this.destroyShip, this);
+      ball.setInteractive().on('pointerdown', destroyBall);
+
 
     }
 
@@ -69,7 +69,7 @@ var config = {
     }
 
 
-  function destroyShip(pointer, gameObject) {
-    ball.setVelocityX(100);
-    //gameObject.play("explode");
+  function destroyBall(pointer, gameObject) {
+    ball.alpha(0.1);
+    
   }
