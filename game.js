@@ -39,11 +39,11 @@ var config = {
       cursors = this.input.keyboard.createCursorKeys(); //8
 
       //14
-      for (var number=0;number<6;number=number+1) { //number++
+      for (var number=0;number<5;number=number+1) { //number++
         this.add.image(40+number*80,300,'star');
       }
             
-      this.input.on('gameobjectdown', this.destroyShip, this);
+      ball.input.on('gameobjectdown', this.destroyShip, this);
 
     }
 
