@@ -70,6 +70,6 @@ var config = {
 
 
   function destroyBall(pointer, gameObject) {
-    ball.alpha(0.1);
+    ball.alpha=0.1;
     
   }
