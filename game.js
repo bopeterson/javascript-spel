@@ -35,17 +35,12 @@ function create ()
 
   this.physics.add.collider(ball, ground); //7
 
-
   cursors = this.input.keyboard.createCursorKeys(); //8
 
   //14
   for (var number=0;number<10;number=number+1) { //number++
     this.add.image(40+number*80,300,'star');
   }
-
-  ball.setInteractive().on('pointerdown', destroyBall);
-
-
 }
 
 function update ()
@@ -65,14 +60,5 @@ function update ()
   else //10
   {
     ball.setVelocityX(0);
-  }
-}
-
-
-function destroyBall(pointer, gameObject) {
-  if (ball.alpha>0.5) {
-    ball.alpha=0.1;
-  } else {
-      ball.alpha=1;
   }
 }
