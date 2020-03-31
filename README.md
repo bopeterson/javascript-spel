@@ -1,2 +1,2 @@
 # javascript-spel
-Ett enkelt javascript-spel i kursen DA152A
+Ett enkelt javascript-spel i kursen ME152A
